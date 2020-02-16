@@ -39,23 +39,15 @@ import RTLPage from "views/RTLPage/RTLPage.js";
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    name: "Overview",
+    name: "Taken Classes",
     rtlName: "لوحة القيادة",
     icon: Dashboard,
     component: DashboardPage,
     layout: "/admin"
   },
   {
-    path: "/user",
-    name: "Classes Needed",
-    rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
-    component: UserProfile,
-    layout: "/admin"
-  },
-  {
     path: "/table",
-    name: "Your Classes",
+    name: "Classes Needed",
     rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,
@@ -63,7 +55,7 @@ const dashboardRoutes = [
   },
   {
     path: "/typography",
-    name: "Typography",
+    name: "Reviews?",
     rtlName: "طباعة",
     icon: LibraryBooks,
     component: Typography,
