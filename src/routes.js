@@ -50,7 +50,7 @@ const dashboardRoutes = [
     name: "Classes Needed",
     rtlName: "ملف تعريفي للمستخدم",
     icon: Person,
-    component: UserProfile,
+    component: TableList,
     layout: "/admin"
   },
   {

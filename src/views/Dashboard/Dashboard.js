@@ -53,14 +53,15 @@ export default function Dashboard() {
                 <Icon>content_copy</Icon>
               </CardIcon>
               <p className={classes.cardCategory}>CPSC329</p>
-              <h3 className={classes.cardTitle}>
-                Optional
-              </h3>
-             
+              <h3 className={classes.cardTitle}>Optional</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                A broad survey of topics in information security and privacy, with the purpose of cultivating an appropriate mindset for approaching security and privacy issues. Topics will be motivated by recreational puzzles. Legal and ethical considerations will be introduced as necessary.
+                A broad survey of topics in information security and privacy,
+                with the purpose of cultivating an appropriate mindset for
+                approaching security and privacy issues. Topics will be
+                motivated by recreational puzzles. Legal and ethical
+                considerations will be introduced as necessary.
               </div>
             </CardFooter>
           </Card>
@@ -73,30 +74,27 @@ export default function Dashboard() {
               </CardIcon>
               <p className={classes.cardCategory}>CPSC457</p>
               <h3 className={classes.cardTitle}>Required</h3>
-              
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-              An introduction to operating systems principles. Performance measurement; concurrent programs; the management of information, memory and processor resources.
+                An introduction to operating systems principles. Performance
+                measurement; concurrent programs; the management of information,
+                memory and processor resources.
               </div>
             </CardFooter>
           </Card>
         </GridItem>
         <GridItem xs={12} sm={6} md={3}>
           <Card>
-<<<<<<< HEAD
-            <CardHeader color="danger" stats icon>
-              <p className={classes.cardCategory}>Fixed Issues</p>
-              <h3 className={classes.cardTitle}>75</h3>
-=======
             <CardHeader color="warning" stats icon>
               <CardIcon color="warning">
                 <Icon>info_outline</Icon>
               </CardIcon>
               <p className={classes.cardCategory}>SENG513</p>
-              <h3 className={classes.cardTitle}>Required<br></br>
-              <small>(Specialization)</small></h3>
->>>>>>> fd8f37e2d99819a3ac0a11f1f8406b2f9ae0469c
+              <h3 className={classes.cardTitle}>
+                Required<br></br>
+                <small>(Specialization)</small>
+              </h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
@@ -124,10 +122,7 @@ export default function Dashboard() {
           </Card>
         </GridItem>
       </GridContainer>
-      <GridContainer>
-        
-      </GridContainer>
-      
+      <GridContainer></GridContainer>
     </div>
   );
 }
