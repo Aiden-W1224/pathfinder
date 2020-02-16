@@ -48,21 +48,22 @@ export default function TableList() {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
-            <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
-            </p>
+            <h4 className={classes.cardTitleWhite}>Required Courses</h4>
           </CardHeader>
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
+              tableHead={[
+                "Class Name",
+                "Semesters Available",
+                "Prerequsites Met"
+              ]}
               tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
+                ["CPSC457", "Fall/Winter/Spring", "No"],
+                ["CPSC413", "Curaçao", "Sinaai-Waas"],
+                ["Sage Rodriguez", "Netherlands", "Baileux"],
+                ["Philip Chaney", "Korea, South", "Overland Park"],
+                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten"],
                 ["Mason Porter", "Chile", "Gloucester", "$78,615"]
               ]}
             />
@@ -72,11 +73,9 @@ export default function TableList() {
       <GridItem xs={12} sm={12} md={12}>
         <Card plain>
           <CardHeader plain color="primary">
-            <h4 className={classes.cardTitleWhite}>
-              Table on Plain Background
-            </h4>
+            <h4 className={classes.cardTitleWhite}>Available Courses</h4>
             <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
+              Classes you can take based on taken courses
             </p>
           </CardHeader>
           <CardBody>
