@@ -35,13 +35,13 @@ const tasksStyle = {
     textAlign: "right"
   },
   tableActionButton: {
-    width: "27px",
-    height: "27px",
+    width: "0px",
+    height: "0px",
     padding: "0"
   },
   tableActionButtonIcon: {
-    width: "17px",
-    height: "17px"
+    width: "0px",
+    height: "0px"
   },
   edit: {
     backgroundColor: "transparent",
