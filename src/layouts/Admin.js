@@ -118,7 +118,6 @@ export default function Admin({ ...rest }) {
         ) : (
           <div className={classes.map}>{switchRoutes}</div>
         )}
-        
       </div>
     </div>
   );
