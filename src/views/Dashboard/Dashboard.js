@@ -45,83 +45,130 @@ export default function Dashboard() {
   const classes = useStyles();
   return (
     <div>
+      
+        
       <GridContainer>
-        <GridItem xs={12} sm={6} md={3}>
-          <Card>
-            <CardHeader color="success" stats icon>
-              <CardIcon color="success">
-                <Icon>content_copy</Icon>
-              </CardIcon>
-              <p className={classes.cardCategory}>CPSC329</p>
-              <h3 className={classes.cardTitle}>
-                Optional
-              </h3>
-             
-            </CardHeader>
-            <CardFooter stats>
-              <div className={classes.stats}>
-                A broad survey of topics in information security and privacy, with the purpose of cultivating an appropriate mindset for approaching security and privacy issues. Topics will be motivated by recreational puzzles. Legal and ethical considerations will be introduced as necessary.
-              </div>
-            </CardFooter>
-          </Card>
+        <GridItem xs={12} sm={12} md={6}>
+          <CustomTabs
+            title="Taken:"
+            headerColor="primary"
+            tabs={[
+              {
+                tabName: "200 Level",
+                // tabIcon: BugReport,
+                tabContent: (
+                  <Tasks
+                    checkedIndexes={[0, 3]}
+                    tasksIndexes={[0, 1, 2, 3]}
+                    tasks={bugs}
+                  />
+                )
+              }
+            ]}
+          />
         </GridItem>
-        <GridItem xs={12} sm={6} md={3}>
-          <Card>
-            <CardHeader color="danger" stats icon>
-              <CardIcon color="danger">
-                <Store />
-              </CardIcon>
-              <p className={classes.cardCategory}>CPSC457</p>
-              <h3 className={classes.cardTitle}>Required</h3>
-              
-            </CardHeader>
-            <CardFooter stats>
-              <div className={classes.stats}>
-              An introduction to operating systems principles. Performance measurement; concurrent programs; the management of information, memory and processor resources.
-              </div>
-            </CardFooter>
-          </Card>
+        
+        <GridItem xs={12} sm={12} md={6}>
+          <CustomTabs
+            title="Taken:"
+            headerColor="primary"
+            tabs={[
+              {
+                tabName: "300 Level",
+                // tabIcon: BugReport,
+                tabContent: (
+                  <Tasks
+                    checkedIndexes={[0, 3]}
+                    tasksIndexes={[0, 1, 2, 3]}
+                    tasks={bugs}
+                  />
+                )
+              }
+            ]}
+          />
         </GridItem>
-        <GridItem xs={12} sm={6} md={3}>
-          <Card>
-            <CardHeader color="warning" stats icon>
-              <CardIcon color="warning">
-                <Icon>info_outline</Icon>
-              </CardIcon>
-              <p className={classes.cardCategory}>SENG513</p>
-              <h3 className={classes.cardTitle}>Required<br></br>
-              <small>(Specialization)</small></h3>
-            </CardHeader>
-            <CardFooter stats>
-              <div className={classes.stats}>
-                <LocalOffer />
-                Tracked from Github
-              </div>
-            </CardFooter>
-          </Card>
+        
+        <GridItem xs={12} sm={12} md={6}>
+          <CustomTabs
+            title="Taken:"
+            headerColor="primary"
+            tabs={[
+              {
+                tabName: "400 Level",
+                // tabIcon: BugReport,
+                tabContent: (
+                  <Tasks
+                    checkedIndexes={[0, 3]}
+                    tasksIndexes={[0, 1, 2, 3]}
+                    tasks={bugs}
+                  />
+                )
+              }
+            ]}
+          />
         </GridItem>
-        <GridItem xs={12} sm={6} md={3}>
-          <Card>
-            <CardHeader color="info" stats icon>
-              <CardIcon color="info">
-                <Accessibility />
-              </CardIcon>
-              <p className={classes.cardCategory}>CPSC418</p>
-              <h3 className={classes.cardTitle}>+245</h3>
-            </CardHeader>
-            <CardFooter stats>
-              <div className={classes.stats}>
-                <Update />
-                Just Updated
-              </div>
-            </CardFooter>
-          </Card>
+        
+        <GridItem xs={12} sm={12} md={6}>
+          <CustomTabs
+            title="Taken:"
+            headerColor="primary"
+            tabs={[
+              {
+                tabName: "500 Level",
+                // tabIcon: BugReport,
+                tabContent: (
+                  <Tasks
+                    checkedIndexes={[0, 3]}
+                    tasksIndexes={[0, 1, 2, 3]}
+                    tasks={bugs}
+                  />
+                )
+              }
+            ]}
+          />
         </GridItem>
-      </GridContainer>
-      <GridContainer>
+        
+        <GridItem xs={12} sm={12} md={6}>
+          <CustomTabs
+            title="Taken:"
+            headerColor="primary"
+            tabs={[
+              {
+                tabName: "600 Level",
+                // tabIcon: BugReport,
+                tabContent: (
+                  <Tasks
+                    checkedIndexes={[0, 3]}
+                    tasksIndexes={[0, 1, 2, 3]}
+                    tasks={bugs}
+                  />
+                )
+              }
+            ]}
+          />
+        </GridItem>
+        
+        <GridItem xs={12} sm={12} md={6}>
+          <CustomTabs
+            title="Taken:"
+            headerColor="primary"
+            tabs={[
+              {
+                tabName: "700 Level",
+                // tabIcon: BugReport,
+                tabContent: (
+                  <Tasks
+                    checkedIndexes={[0, 3]}
+                    tasksIndexes={[0, 1, 2, 3]}
+                    tasks={bugs}
+                  />
+                )
+              }
+            ]}
+          />
+        </GridItem>
         
       </GridContainer>
-      
     </div>
   );
 }
