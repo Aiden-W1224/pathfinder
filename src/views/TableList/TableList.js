@@ -56,15 +56,14 @@ export default function TableList() {
               tableHead={[
                 "Class Name",
                 "Semesters Available",
+                "Prerequisites",
                 "Prerequsites Met"
               ]}
               tableData={[
-                ["CPSC457", "Fall/Winter/Spring", "No"],
-                ["CPSC413", "Curaçao", "Sinaai-Waas"],
-                ["Sage Rodriguez", "Netherlands", "Baileux"],
-                ["Philip Chaney", "Korea, South", "Overland Park"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                ["CPSC457", "Fall/Winter/Spring", "CPSC331, CPSC359", "No"],
+                ["CPSC413", "Fall/Winter/Spring", "CPSC331, CPSC313", "Yes"],
+                ["CPSC359", "Fall/Winter/Spring", "CPSC355", "No"],
+                ["CPSC355", "Fall/Winter/Spring", "CPSC233", "Yes"]
               ]}
             />
           </CardBody>
@@ -81,26 +80,18 @@ export default function TableList() {
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["ID", "Name", "Country", "City", "Salary"]}
+              tableHead={[
+                "Class Name",
+                "Semesters Available",
+                "Prerequisites",
+                "Prerequsites Met"
+              ]}
               tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-                [
-                  "4",
-                  "Philip Chaney",
-                  "$38,735",
-                  "Korea, South",
-                  "Overland Park"
-                ],
-                [
-                  "5",
-                  "Doris Greene",
-                  "$63,542",
-                  "Malawi",
-                  "Feldkirchen in Kärnten"
-                ],
-                ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
+                ["CPSC513", "Fall/Winter/Spring", "CPS413", "No"],
+                ["CPSC329", "Fall/Winter/Spring", "CPSC231", "Yes"],
+                ["CPSC501", "Fall/Winter/Spring", "CPSC349 or 359", "No"],
+                ["CPSC481", "Fall/Winter/Spring", "SENG300", "Yes"],
+                ["CPSC471", "Fall/Winter/Spring", "CPSC331", "Yes"]
               ]}
             />
           </CardBody>
