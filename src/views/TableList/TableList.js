@@ -70,12 +70,9 @@ export default function TableList() {
         </Card>
       </GridItem>
       <GridItem xs={12} sm={12} md={12}>
-        <Card plain>
-          <CardHeader plain color="primary">
+        <Card>
+          <CardHeader color="primary">
             <h4 className={classes.cardTitleWhite}>Available Courses</h4>
-            <p className={classes.cardCategoryWhite}>
-              Classes you can take based on taken courses
-            </p>
           </CardHeader>
           <CardBody>
             <Table
