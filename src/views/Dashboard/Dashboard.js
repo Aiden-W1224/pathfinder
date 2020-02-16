@@ -29,7 +29,7 @@ import CardIcon from "components/Card/CardIcon.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
-import { bugs, website, server } from "variables/general.js";
+import { bugs200, bugs300, bugs400, bugs500, bugs600, bugs700, website, server } from "variables/general.js";
 
 import {
   dailySalesChart,
@@ -60,7 +60,7 @@ export default function Dashboard() {
                   <Tasks
                     checkedIndexes={[0, 3]}
                     tasksIndexes={[0, 1, 2, 3]}
-                    tasks={bugs}
+                    tasks={bugs200}
                   />
                 )
               }
@@ -80,7 +80,7 @@ export default function Dashboard() {
                   <Tasks
                     checkedIndexes={[0, 3]}
                     tasksIndexes={[0, 1, 2, 3]}
-                    tasks={bugs}
+                    tasks={bugs300}
                   />
                 )
               }
@@ -100,7 +100,7 @@ export default function Dashboard() {
                   <Tasks
                     checkedIndexes={[0, 3]}
                     tasksIndexes={[0, 1, 2, 3]}
-                    tasks={bugs}
+                    tasks={bugs400}
                   />
                 )
               }
@@ -120,7 +120,7 @@ export default function Dashboard() {
                   <Tasks
                     checkedIndexes={[0, 3]}
                     tasksIndexes={[0, 1, 2, 3]}
-                    tasks={bugs}
+                    tasks={bugs500}
                   />
                 )
               }
@@ -140,7 +140,7 @@ export default function Dashboard() {
                   <Tasks
                     checkedIndexes={[0, 3]}
                     tasksIndexes={[0, 1, 2, 3]}
-                    tasks={bugs}
+                    tasks={bugs600}
                   />
                 )
               }
@@ -160,7 +160,7 @@ export default function Dashboard() {
                   <Tasks
                     checkedIndexes={[0, 3]}
                     tasksIndexes={[0, 1, 2, 3]}
-                    tasks={bugs}
+                    tasks={bugs700}
                   />
                 )
               }
