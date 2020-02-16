@@ -55,7 +55,7 @@ const dashboardRoutes = [
   },
   {
     path: "/typography",
-    name: "Reviews?",
+    name: "Reviews",
     rtlName: "طباعة",
     icon: LibraryBooks,
     component: Typography,
